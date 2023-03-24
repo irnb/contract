@@ -1,0 +1,19 @@
+[profile.default]
+via_ir = true
+test = 'test/foundry'
+src = 'contracts'
+out = 'out'
+libs = ['node_modules', 'lib']
+cache_path  = 'cache_forge'
+
+remappings = [
+    'forge-std=lib/forge-std/src/',
+    'contracts/=contracts/',
+]
+
+optimizer = true
+optimizer_runs = 200
+fuzz_runs = 7500
+
+block_timestamp = 1738389600
+
