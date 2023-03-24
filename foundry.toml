@@ -1,5 +1,7 @@
 [profile.default]
+
 via_ir = true
+solc = "0.8.17"
 test = 'test/foundry'
 src = 'contracts'
 out = 'out'
@@ -17,3 +19,4 @@ fuzz_runs = 7500
 
 block_timestamp = 1738389600
 
+gas_reports = ["*"]
