@@ -1,0 +1,127 @@
+No files changed, compilation skipped
+
+Running 52 tests for test/foundry/DDL.t.sol:ContractTest
+[32m[PASS][0m test_acceptModeration() (gas: 60596)
+[32m[PASS][0m test_acceptModeration_is_endgame() (gas: 75181)
+[32m[PASS][0m test_acceptModeration_is_mod_candidate() (gas: 80312)
+[32m[PASS][0m test_acceptModeration_not_paused() (gas: 120485)
+[32m[PASS][0m test_addOrgSignerReq() (gas: 323412)
+[32m[PASS][0m test_addOrgSignerRequest_alreadyMember() (gas: 206564)
+[32m[PASS][0m test_addOrgSignerRequest_notMember() (gas: 24112)
+[32m[PASS][0m test_addOrgSignerRequest_org_deactivated() (gas: 44051)
+[32m[PASS][0m test_addOrgSignerRequest_quorumTooHigh() (gas: 254171)
+[32m[PASS][0m test_addOrgSignerRequest_signer_is_empty() (gas: 185928)
+[32m[PASS][0m test_addOrgSignerRequest_signer_is_paused() (gas: 70718)
+[32m[PASS][0m test_addOrgSignerRequest_zeroQuorum() (gas: 234184)
+[32m[PASS][0m test_cancelMigrationProcess() (gas: 48246)
+[32m[PASS][0m test_cancelMigrationProcess_mods_only() (gas: 64847)
+[32m[PASS][0m test_cancelMigrationProcess_paused_only() (gas: 15816)
+[32m[PASS][0m test_createLine() (gas: 82913)
+[32m[PASS][0m test_deactivateLineReq() (gas: 192553)
+[32m[PASS][0m test_deactivateOrgReq() (gas: 244236)
+[32m[PASS][0m test_deactivateOrgReq_mod() (gas: 30803)
+[32m[PASS][0m test_deactivatedOrg_updateOrgOrgQuorumReq() (gas: 47745)
+[32m[PASS][0m test_givePrivacyProviderRoleToAnOrgLine() (gas: 31765)
+[32m[PASS][0m test_migrateRemainingAssetToEndGameTreasury() (gas: 320909)
+[32m[PASS][0m test_receive() (gas: 67419)
+[32m[PASS][0m test_receive_paused() (gas: 77777)
+[32m[PASS][0m test_registerAnOrg() (gas: 558696)
+[32m[PASS][0m test_removeOrgSignerReq() (gas: 263004)
+[32m[PASS][0m test_removeOrgSignerRequest_notMember() (gas: 24084)
+[32m[PASS][0m test_removeOrgSignerRequest_quorumTooHigh() (gas: 194209)
+[32m[PASS][0m test_removeOrgSignerRequest_signer_is_paused() (gas: 70010)
+[32m[PASS][0m test_removeOrgSignerRequest_zeroQuorum() (gas: 174431)
+[32m[PASS][0m test_removePrivacyProviderRoleFromAnOrgLine() (gas: 47227)
+[32m[PASS][0m test_revokeModerationToCommunityRequest_no_new_mod() (gas: 57117)
+[32m[PASS][0m test_revokeModerationToCommunityRequest_not_paused() (gas: 118859)
+[32m[PASS][0m test_revokeModerationToCommunityRequest_only_mods() (gas: 73951)
+[32m[PASS][0m test_revokeTransferModerationToCommunityRequest() (gas: 56487)
+[32m[PASS][0m test_setUp() (gas: 111241)
+[32m[PASS][0m test_setup_no_signers() (gas: 173466)
+[32m[PASS][0m test_setup_quorum_too_big() (gas: 178440)
+[32m[PASS][0m test_setup_zero_quorum() (gas: 178115)
+[32m[PASS][0m test_startMigrationProcess() (gas: 61390)
+[32m[PASS][0m test_startMigrationProcess_not_paused() (gas: 62275)
+[32m[PASS][0m test_startMigrationProcess_only_mods() (gas: 14644)
+[32m[PASS][0m test_transferModerationToCommunityRequest() (gas: 72582)
+[32m[PASS][0m test_transferModerationToCommunityRequest_migration_incomplete() (gas: 50195)
+[32m[PASS][0m test_transferModerationToCommunityRequest_not_paused() (gas: 94551)
+[32m[PASS][0m test_transferModerationToCommunityRequest_only_mods() (gas: 49105)
+[32m[PASS][0m test_updateEndgameData() (gas: 50217)
+[32m[PASS][0m test_updateEndgameData_not_paused() (gas: 66058)
+[32m[PASS][0m test_updateEndgameData_only_mods() (gas: 17226)
+[32m[PASS][0m test_updateOrgOrgQuorumReq() (gas: 244613)
+[32m[PASS][0m test_updateOrgURI() (gas: 75224)
+[32m[PASS][0m test_verifyOrg() (gas: 37018)
+Test result: [32mok[0m. 52 passed; 0 failed; finished in 10.26ms
+| contracts/DDL.sol:DDL contract             |                 |       |        |        |         |
+|--------------------------------------------|-----------------|-------|--------|--------|---------|
+| Deployment Cost                            | Deployment Size |       |        |        |         |
+| 5487744                                    | 31706           |       |        |        |         |
+| Function Name                              | min             | avg   | median | max    | # calls |
+| PROPOSAL_AND_SIGNER_SIGNATURE_VALID_UNTIL  | 484             | 484   | 484    | 484    | 3       |
+| acceptModeration                           | 1065            | 1797  | 1305   | 3513   | 4       |
+| addOrgSignerReq                            | 697             | 92662 | 134531 | 154431 | 8       |
+| approveOrgProposal                         | 31919           | 56909 | 51457  | 102448 | 11      |
+| cancelMigrationProcess                     | 641             | 2420  | 1848   | 4772   | 3       |
+| createLine                                 | 3718            | 31966 | 31966  | 60215  | 2       |
+| createMessageHash                          | 1962            | 1962  | 1962   | 1962   | 3       |
+| deactivateLineReq                          | 3359            | 55474 | 55474  | 107590 | 2       |
+| deactivateOrgReq                           | 1469            | 35919 | 16209  | 150207 | 6       |
+| didSignOrgTransaction                      | 1693            | 1978  | 1693   | 3693   | 7       |
+| donateToLineWithToken                      | 68469           | 68469 | 68469  | 68469  | 1       |
+| endgamePlatform                            | 1098            | 3098  | 3098   | 5098   | 2       |
+| givePrivacyProviderRoleToAnOrgLine         | 3473            | 7397  | 7706   | 10706  | 4       |
+| hasPrivacyProviderRole                     | 739             | 739   | 739    | 739    | 1       |
+| isOrgMember                                | 1345            | 2145  | 1345   | 3345   | 5       |
+| lineReceivedDonationsPerAsset              | 1441            | 2441  | 2441   | 3441   | 2       |
+| migrateDeadline                            | 957             | 957   | 957    | 957    | 1       |
+| migrateRemainingAssetToEndGameTreasury     | 1479            | 27166 | 1779   | 78240  | 3       |
+| moderators                                 | 875             | 1875  | 1875   | 2875   | 2       |
+| newModeratorsCandidate                     | 289             | 289   | 289    | 289    | 4       |
+| onERC721Received                           | 622             | 622   | 622    | 622    | 1       |
+| orgMembers                                 | 909             | 1709  | 909    | 2909   | 5       |
+| orgProposals                               | 2097            | 2727  | 2357   | 4097   | 4       |
+| orgRegistrationSpamProtectionFee           | 3335            | 3335  | 3335   | 3335   | 1       |
+| organizationExternalDonationAddresses      | 3015            | 5015  | 5015   | 7015   | 4       |
+| organizationIdRelatedData                  | 801             | 1467  | 801    | 2801   | 3       |
+| organizationTotalDonationsPerAsset         | 1025            | 2025  | 2025   | 3025   | 2       |
+| organizations                              | 3466            | 7266  | 7466   | 11466  | 10      |
+| orgsLines                                  | 1473            | 2911  | 3473   | 5473   | 7       |
+| paused                                     | 621             | 621   | 621    | 621    | 2       |
+| receive                                    | 319             | 31240 | 46701  | 46701  | 3       |
+| registerAnOrg                              | 15844           | 81800 | 21080  | 334447 | 5       |
+| removeOrgSignerReq                         | 1081            | 78717 | 115018 | 134918 | 5       |
+| removePrivacyProviderRoleFromAnOrgLine     | 3445            | 3501  | 3501   | 3557   | 2       |
+| revokeTransferModerationToCommunityRequest | 826             | 936   | 917    | 1085   | 4       |
+| startMigrationProcess                      | 1385            | 41145 | 48783  | 48783  | 14      |
+| transferModerationToCommunityRequest       | 694             | 15863 | 23086  | 23086  | 12      |
+| updateEndgameData                          | 1416            | 25460 | 32635  | 32635  | 17      |
+| updateOrgOrgQuorumReq                      | 4148            | 45207 | 5888   | 125585 | 3       |
+| updateOrgURI                               | 1967            | 6961  | 3627   | 15289  | 3       |
+| verifyOrg                                  | 3211            | 6771  | 6771   | 10332  | 2       |
+
+
+| lib/solmate/src/test/utils/mocks/MockERC20.sol:MockERC20 contract |                 |       |        |       |         |
+|-------------------------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                                   | Deployment Size |       |        |       |         |
+| 626750                                                            | 4426            |       |        |       |         |
+| Function Name                                                     | min             | avg   | median | max   | # calls |
+| approve                                                           | 24310           | 24310 | 24310  | 24310 | 1       |
+| balanceOf                                                         | 582             | 582   | 582    | 582   | 3       |
+| mint                                                              | 46534           | 46534 | 46534  | 46534 | 52      |
+| transfer                                                          | 19880           | 19880 | 19880  | 19880 | 1       |
+| transferFrom                                                      | 24100           | 24100 | 24100  | 24100 | 1       |
+
+
+| lib/solmate/src/test/utils/mocks/MockERC721.sol:MockERC721 contract |                 |       |        |       |         |
+|---------------------------------------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                                                     | Deployment Size |       |        |       |         |
+| 815958                                                              | 4989            |       |        |       |         |
+| Function Name                                                       | min             | avg   | median | max   | # calls |
+| mint                                                                | 46894           | 46894 | 46894  | 46894 | 52      |
+| ownerOf                                                             | 595             | 595   | 595    | 595   | 1       |
+| safeTransferFrom                                                    | 20748           | 27370 | 27370  | 33992 | 2       |
+
+
+
